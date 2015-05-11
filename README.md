@@ -7,3 +7,5 @@ Suppose you have thousands of pictures: trips, parties, dinners with friends, et
 
 With this tool you can move all files located in an given input folder to a well organized output folder using timestamps.
 
+TODO:
+Still implementing
