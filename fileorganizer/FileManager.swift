@@ -30,10 +30,16 @@ class FileManager {
     
     func execute () {
         
+        let stopwatch = Stopwatch()
+        let logger = Logger()
+        
+        
         // Counters - Success
         var count : Int = 0
         var success : Int = 0
         var error : Int = 0
+        
+        stopwatch.start()
         
         // Managers.
         let reader = HierarchyReader(inputPath: self.inputPath)
@@ -51,9 +57,14 @@ class FileManager {
             }
             
             count++
+            
+            logger.showMessage("\(entry)")
         }
         
-        // TODO: Present results.
+        stopwatch.stop()
+        
+        
+        logger.showSuccess(String(format: "Results %d Success %d Error %d Total", success, error, count))
+        logger.showSuccess(String(format: "Time elapsed %@", stopwatch.print()))
     }
-    
 }

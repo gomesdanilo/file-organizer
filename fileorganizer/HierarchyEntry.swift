@@ -13,6 +13,8 @@ class HierarchyEntry : Printable
     let filePath : String
     let timestamp : NSDate
     
+    var newFilePath : String?
+    
     init(filePath:String, timestamp:NSDate)
     {
         self.filePath = filePath
@@ -20,7 +22,15 @@ class HierarchyEntry : Printable
     }
     
     var description: String {
-        return String("\(self.filePath) \(self.timestamp)")
+        
+        if(self.newFilePath == nil)
+        {
+            return String("Old Filepath \(self.filePath) New Filepath (--)")
+        }
+        else
+        {
+            return String("Old Filepath \(self.filePath) New Filepath \(self.newFilePath)")
+        }
+        
     }
-    
 }

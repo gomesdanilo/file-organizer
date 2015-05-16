@@ -51,6 +51,8 @@ class HierarchyReader
             
             var success = true
             
+            // TODO: Consider to use exif data to get timestamp from pictures.
+            
             success = (success && currentFile.getResourceValue(&isDirectoryObj, forKey:NSURLIsDirectoryKey, error:&error))
             success = (success && currentFile.getResourceValue(&creationDateObj, forKey:NSURLCreationDateKey, error:&error))
             
