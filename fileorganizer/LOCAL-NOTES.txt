@@ -1,0 +1,47 @@
+
+
+
+//#define ZERO_ORDER 0
+//
+//#define CONSOLE_RESET   "\x1B[0m"
+//#define CONSOLE_RED     "\x1B[31m"
+//#define CONSOLE_GREEN   "\x1B[32m"
+//#define CONSOLE_YELLOW  "\x1B[33m"
+//#define CONSOLE_BLUE    "\x1B[34m"
+//#define CONSOLE_MAGENTA "\x1B[35m"
+//#define CONSOLE_CYAN    "\x1B[36m"
+//#define CONSOLE_WHYTE   "\x1B[37m"
+
+//-(void)showMessage:(NSString *)msg
+//{
+//    if(msg != nil)
+//    {
+//        printf(CONSOLE_RESET "%s\n", [msg UTF8String]);
+//    }
+//}
+//
+//-(void)showError:(NSString *)msg
+//{
+//    if(msg != nil)
+//    {
+//        printf(CONSOLE_RED "%s\n", [msg UTF8String]);
+//    }
+//}
+//
+//-(void)showSuccess:(NSString *)msg
+//{
+//    if(msg != nil)
+//    {
+//        printf(CONSOLE_GREEN "%s\n", [msg UTF8String]);
+//    }
+
+
+//let ZERO_ORDER = 0
+
+//    // TODO: Use exif data.
+
+
+//    //[self showSuccess:[NSString stringWithFormat:@"Results %d Success %d Error %d Skipped", nSuccess, nError, nSkipped]];
+//    //[self showSuccess:[NSString stringWithFormat:@"Time elapsed %@", [stopwatch print]]];
+//    //[self showMessage:@"."];
+

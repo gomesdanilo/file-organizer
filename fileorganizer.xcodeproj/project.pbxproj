@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AAA5E7411B073D4A00C17B18 /* HierarchyReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5E7401B073D4A00C17B18 /* HierarchyReader.swift */; };
+		AAA5E7431B073D5E00C17B18 /* HierarchyWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5E7421B073D5E00C17B18 /* HierarchyWriter.swift */; };
+		AAA5E7451B073EA600C17B18 /* HierarchyEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA5E7441B073EA600C17B18 /* HierarchyEntry.swift */; };
 		AACF546D1B012A810065ED52 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF546C1B012A810065ED52 /* main.swift */; };
 		AACF54741B012B380065ED52 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF54731B012B380065ED52 /* FileManager.swift */; };
 		AACF54781B012BD00065ED52 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF54771B012BD00065ED52 /* Stopwatch.swift */; };
@@ -25,6 +28,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AAA5E7401B073D4A00C17B18 /* HierarchyReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyReader.swift; sourceTree = "<group>"; };
+		AAA5E7421B073D5E00C17B18 /* HierarchyWriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyWriter.swift; sourceTree = "<group>"; };
+		AAA5E7441B073EA600C17B18 /* HierarchyEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HierarchyEntry.swift; sourceTree = "<group>"; };
+		AAA5E7461B07587000C17B18 /* LOCAL-NOTES.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LOCAL-NOTES.txt"; sourceTree = "<group>"; };
 		AACF54691B012A810065ED52 /* fileorganizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = fileorganizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		AACF546C1B012A810065ED52 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		AACF54731B012B380065ED52 /* FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -64,6 +71,10 @@
 				AACF546C1B012A810065ED52 /* main.swift */,
 				AACF54731B012B380065ED52 /* FileManager.swift */,
 				AACF54771B012BD00065ED52 /* Stopwatch.swift */,
+				AAA5E7401B073D4A00C17B18 /* HierarchyReader.swift */,
+				AAA5E7421B073D5E00C17B18 /* HierarchyWriter.swift */,
+				AAA5E7441B073EA600C17B18 /* HierarchyEntry.swift */,
+				AAA5E7461B07587000C17B18 /* LOCAL-NOTES.txt */,
 			);
 			path = fileorganizer;
 			sourceTree = "<group>";
@@ -126,6 +137,9 @@
 			files = (
 				AACF546D1B012A810065ED52 /* main.swift in Sources */,
 				AACF54781B012BD00065ED52 /* Stopwatch.swift in Sources */,
+				AAA5E7451B073EA600C17B18 /* HierarchyEntry.swift in Sources */,
+				AAA5E7431B073D5E00C17B18 /* HierarchyWriter.swift in Sources */,
+				AAA5E7411B073D4A00C17B18 /* HierarchyReader.swift in Sources */,
 				AACF54741B012B380065ED52 /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,6 +258,7 @@
 				AACF54721B012A810065ED52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

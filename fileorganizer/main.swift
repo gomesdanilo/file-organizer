@@ -21,6 +21,20 @@ func main(){
     var input : String? = String.fromCString(Process.unsafeArgv[1])
     var output : String? = String.fromCString(Process.unsafeArgv[2])
     
+    if(input == nil || output == nil)
+    {
+        showMessage("Invalid parameters. Please provide a valid path.")
+        showMessage("<INPUT> <OUTPUT>")
+        return
+    }
+    
+    if(input == output)
+    {
+        showMessage("Invalid parameters. Input can't be the same as output, please use different folders. Example two folders with different names on the same level.")
+        showMessage("<INPUT> <OUTPUT>")
+        return
+    }
+    
     let fileManager = FileManager(inputPath: input!, outputPath: output!)
     fileManager.execute()
 }
