@@ -88,10 +88,12 @@ class HierarchyWriter
         // Iterates until generate valid name.
         while self.fileManager.fileExistsAtPath(newFilePath)
         {
-            newFileName = String(format: "%@ %02d", order)
+            newFileName = String(format: "%@ (%02d)", fileTimestamp, order)
             newFilePath = folderPath
                 .stringByAppendingPathComponent(newFileName)
                 .stringByAppendingPathExtension(fileExtension)!
+            
+            order++;
         }
         
         return newFilePath
@@ -103,6 +105,9 @@ class HierarchyWriter
         
         var error : NSError?
         let status = fileManager.moveItemAtPath(entry.filePath, toPath: newFilePath, error: &error)
+        
+        entry.newFilePath = newFilePath
+        entry.success = status
         
         return status
     }

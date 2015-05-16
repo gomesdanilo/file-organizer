@@ -14,23 +14,20 @@ class HierarchyEntry : Printable
     let timestamp : NSDate
     
     var newFilePath : String?
+    var success : Bool
     
     init(filePath:String, timestamp:NSDate)
     {
         self.filePath = filePath
         self.timestamp = timestamp
+        self.success = false
     }
     
     var description: String {
         
-        if(self.newFilePath == nil)
-        {
-            return String("Old Filepath \(self.filePath) New Filepath (--)")
-        }
-        else
-        {
-            return String("Old Filepath \(self.filePath) New Filepath \(self.newFilePath)")
-        }
-        
+        return String(format: "[%@] Old Filepath %@ New Filepath %@",
+            (self.success ? "SUCCESS":"ERROR  "),
+            self.filePath,
+            (self.newFilePath != nil ? self.newFilePath! : "--"))
     }
 }
