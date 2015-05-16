@@ -60,11 +60,11 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "/Users/danilogomes/Desktop/temp"
+            argument = "&quot;/pessoal_sem_backup/hd/brazil pictures/_Fotos/many 06 - Fotos 15/old/old&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "/Users/danilogomes/Desktop/temp2"
+            argument = "&quot;/pessoal_sem_backup/hd/brazil pictures/_Fotos/many 06 - Fotos 15/old/new&quot;"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
